@@ -200,6 +200,7 @@ class Enquire::Internal : public Xapian::Internal::intrusive_base {
 };
 
 class MSet::Internal : public Xapian::Internal::intrusive_base {
+    friend class MSetRanker;
     public:
 	/// Factor to multiply weights by to convert them to percentages.
 	double percent_factor;

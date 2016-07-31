@@ -5,6 +5,7 @@ noinst_HEADERS +=\
 	api/emptypostlist.h\
 	api/leafpostlist.h\
 	api/maptermlist.h\
+    api/msetranker.h\
 	api/omenquireinternal.h\
 	api/postlist.h\
 	api/queryinternal.h\
@@ -30,6 +31,7 @@ lib_src +=\
 	api/keymaker.cc\
 	api/leafpostlist.cc\
 	api/matchspy.cc\
+    api/msetranker.cc\
 	api/omdatabase.cc\
 	api/omdocument.cc\
 	api/omenquire.cc\
