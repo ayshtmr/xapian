@@ -109,7 +109,7 @@ calculateGradient(const vector<FeatureVector> &feature_vectors, const prob_distr
 }
 
 static void
-updateParameters(vector<double> &new_parameters, const vector<double> &gradient, const double &learning_rate) {
+updateParameters(vector<double> &new_parameters, const vector<double> &gradient, double learning_rate) {
     LOGCALL_STATIC_VOID(API, "updateParameters", new_parameters | gradient | learning_rate);
     for (size_t i = 0; i < new_parameters.size(); i++) {
 	new_parameters[i] -= gradient[i] * learning_rate;
